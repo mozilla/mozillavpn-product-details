@@ -1,0 +1,16 @@
+{
+  "latest": {
+    "ANDROID": "2.6.0",
+    "IOS": "2.6.0",
+    "LINUX": "2.6.0",
+    "MAC": "2.6.0",
+    "WINDOWS": "2.6.0"
+  },
+  "releases": {
+    "2.6.0": {
+      "build": 1,
+      "date": "2021-10-27",
+      "platforms": ["ANDROID", "IOS", "LINUX", "MAC", "WINDOWS"]
+    }
+  }
+}

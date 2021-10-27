@@ -1,0 +1,10 @@
+{
+  "name": "mozillavpn-product-details",
+  "version": "1.0.0",
+  "dependencies": {
+    "ajv-cli": "^5.0.0"
+  },
+  "scripts": {
+    "test": "ajv validate --spec=jtd -s schema.jtd.json -d product-details/*.json"
+  }
+}

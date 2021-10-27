@@ -1,0 +1,6 @@
+{
+  "properties": {
+    "latest": { "type": "string" },
+    "releases": { "type": "timestamp" }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "latest": {
+    "ANDROID": "2.5.1",
+    "IOS": "2.5.1",
+    "LINUX": "2.5.0",
+    "MAC": "2.5.0",
+    "WINDOWS": "2.5.0",
+  },
+  "releases": {
+    "2.5.1": {
+      "build": null,
+      "date": "2021-10-20",
+      "platforms": ["ANDROID", "IOS"]
+    },
+    "2.5.0": {
+      "build": null,
+      "date": "2021-10-01",
+      "platforms": ["ANDROID", "IOS", "LINUX", "MAC", "WINDOWS"]
+    }
+  }
+}
