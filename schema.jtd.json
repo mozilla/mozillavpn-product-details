@@ -1,6 +1,31 @@
 {
+  "definitions": {
+    "release": {
+      "properties": {
+        "date": {"type": "timestamp"},
+        "platforms": {
+          "elements": {
+            "enum": ["ANDROID", "IOS", "MAC", "WINDOWS"]
+          }
+        }
+      },
+      "optionalProperties": {
+        "build": {"type": "uint8"}
+      }
+    }
+  },
   "properties": {
-    "latest": { "type": "string" },
-    "releases": { "type": "timestamp" }
+    "latest": {
+      "properties": {
+        "ANDROID": {"type": "string"},
+        "IOS": {"type": "string"},
+        "LINUX": {"type": "string"},
+        "MAC": {"type": "string"},
+        "WINDOWS": {"type": "string"}
+      }
+    },
+    "releases": {
+      "values": {"ref": "release"}
+    }
   }
 }
