@@ -5,6 +5,6 @@
     "ajv-cli": "^5.0.0"
   },
   "scripts": {
-    "test": "ajv validate --spec=jtd -s schema.jtd.json -d docs/*.json"
+    "test": "ajv validate --spec=jtd -s schema.jtd.json -d 'docs/*.json'"
   }
 }
