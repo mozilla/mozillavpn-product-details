@@ -2,15 +2,15 @@
   "definitions": {
     "release": {
       "properties": {
-        "date": {"type": "timestamp"},
+        "date": {
+          "type": "string"
+        },
         "platforms": {
           "elements": {
-            "enum": ["ANDROID", "IOS", "MAC", "WINDOWS"]
+            "enum": ["ANDROID", "IOS", "MAC", "WINDOWS", "LINUX"]
           }
-        }
-      },
-      "optionalProperties": {
-        "build": {"type": "uint8"}
+        },
+        "build": {"type": "uint8", "nullable": true}
       }
     }
   },
