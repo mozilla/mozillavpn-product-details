@@ -1,3 +1,5 @@
+![ci](https://github.com/mozilla/mozillavpn-product-details/actions/workflows/test.yml/badge.svg)
+
 ### https://mozilla.github.io/mozillavpn-product-details
 
 Hosts a [product-details](https://github.com/mozilla-releng/product-details) style json files for the vpn.
