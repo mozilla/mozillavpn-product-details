@@ -8,7 +8,7 @@
   },
   "releases": {
     "2.5.1": {
-      "build": 1,
+      "build": null,
       "date": "2021-10-20",
       "platforms": ["ANDROID", "IOS"]
     },
