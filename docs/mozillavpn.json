@@ -15,7 +15,7 @@
     "2.5.0": {
       "build": null,
       "date": "2021-09-15",
-      "platforms": ["ANDROID", "IOS", "LINUX", "MAC", "WINDOWS"]
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     }
   }
 }
