@@ -3,7 +3,7 @@
     "ANDROID": "2.5.1",
     "IOS": "2.5.1",
     "LINUX": "2.5.0",
-    "MAC": "2.5.0",
+    "MACOS": "2.5.0",
     "WINDOWS": "2.5.0"
   },
   "releases": {
@@ -15,7 +15,7 @@
     "2.5.0": {
       "build": null,
       "date": "2021-09-15",
-      "platforms": ["ANDROID", "IOS", "LINUX", "MAC", "WINDOWS"]
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     }
   }
 }
