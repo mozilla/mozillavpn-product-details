@@ -3,7 +3,7 @@
     "ANDROID": "2.5.1",
     "IOS": "2.5.1",
     "LINUX": "2.5.0",
-    "MAC": "2.5.0",
+    "MACOS": "2.5.0",
     "WINDOWS": "2.5.0"
   },
   "releases": {

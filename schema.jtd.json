@@ -20,7 +20,7 @@
         "ANDROID": {"type": "string"},
         "IOS": {"type": "string"},
         "LINUX": {"type": "string"},
-        "MAC": {"type": "string"},
+        "MACOS": {"type": "string"},
         "WINDOWS": {"type": "string"}
       }
     },
