@@ -2,9 +2,9 @@
   "latest": {
     "ANDROID": "2.5.1",
     "IOS": "2.5.1",
-    "LINUX": "2.5.0",
-    "MACOS": "2.5.0",
-    "WINDOWS": "2.5.0"
+    "LINUX": "2.6.0",
+    "MACOS": "2.6.0",
+    "WINDOWS": "2.6.0"
   },
   "releases": {
     "2.5.1": {
@@ -16,6 +16,11 @@
       "build": null,
       "date": "2021-09-15",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+    },
+    "2.6.0": {
+      "build": null,
+      "date": "2021-11-15",
+      "platforms": ["LINUX", "MACOS", "WINDOWS"]
     }
   }
 }
