@@ -3,8 +3,8 @@
     "ANDROID": "2.6.0",
     "IOS": "2.6.0",
     "LINUX": "2.6.0",
-    "MACOS": "2.6.0",
-    "WINDOWS": "2.6.0"
+    "MACOS": "2.7.0",
+    "WINDOWS": "2.7.0"
   },
   "releases": {
     "2.6.0": {
@@ -14,7 +14,7 @@
     },
     "2.7.0": {
       "build": 2,
-      "date": "2021-01-20",
+      "date": "2022-01-20",
       "platforms": ["MACOS", "WINDOWS"]
     }
   }
