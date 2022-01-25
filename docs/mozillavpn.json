@@ -20,12 +20,17 @@
     "2.6.0": {
       "build": null,
       "date": "2021-11-15",
-      "platforms": ["LINUX", "MACOS", "WINDOWS"]
-    },
+      "platforms": ["LINUX", "MACOS", "WINDOWS", "IOS"]
+    }, 
     "2.6.1": {
       "build": null,
       "date": "2021-11-22",
-      "platforms": ["ANDROID", "IOS", "MACOS", "WINDOWS"]
+      "platforms": ["ANDROID", "MACOS", "WINDOWS"]
+    },
+    "2.6.2": {
+      "build": null,
+      "date": "2021-11-23",
+      "platforms": ["IOS"]
     }
   }
 }
