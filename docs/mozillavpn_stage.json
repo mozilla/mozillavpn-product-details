@@ -14,7 +14,7 @@
     },
     "2.7.0": {
       "build": 3,
-      "date": "2022-01-20",
+      "date": "2022-01-27",
       "platforms": ["MACOS", "WINDOWS"]
     }
   }
