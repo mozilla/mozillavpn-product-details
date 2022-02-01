@@ -1,10 +1,10 @@
 {
   "latest": {
-    "ANDROID": "2.6.1",
-    "IOS": "2.6.1",
-    "LINUX": "2.6.0",
-    "MACOS": "2.6.1",
-    "WINDOWS": "2.6.1"
+    "ANDROID": "2.7.0",
+    "IOS": "2.7.0",
+    "LINUX": "2.7.0",
+    "MACOS": "2.7.0",
+    "WINDOWS": "2.7.0"
   },
   "releases": {
     "2.5.1": {
