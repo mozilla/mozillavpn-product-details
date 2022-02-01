@@ -31,6 +31,11 @@
       "build": null,
       "date": "2021-11-23",
       "platforms": ["IOS"]
+    },
+    "2.7.0": {
+      "build": null,
+      "date": "2022-02-01",
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     }
   }
 }
