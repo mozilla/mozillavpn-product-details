@@ -18,8 +18,8 @@
       "platforms": ["MACOS", "WINDOWS"]
     },
     "2.7.1": {
-      "build": 3,
-      "date": "2022-02-17",
+      "build": 4,
+      "date": "2022-02-18",
       "platforms": ["WINDOWS"]
     }
   }
