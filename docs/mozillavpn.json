@@ -45,7 +45,7 @@
     "2.8.0": {
       "build": null,
       "date": "2022-04-18",
-      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS"]
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     }
   }
 }
