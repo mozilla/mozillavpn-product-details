@@ -3,8 +3,8 @@
     "ANDROID": "2.8.0",
     "IOS": "2.8.0",
     "LINUX": "2.8.0",
-    "MACOS": "2.8.0",
-    "WINDOWS": "2.7.1"
+    "MACOS": "2.8.3",
+    "WINDOWS": "2.8.3"
   },
   "releases": {
     "2.5.1": {
@@ -46,6 +46,11 @@
       "build": null,
       "date": "2022-04-18",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+    },
+    "2.8.3": {
+      "build": null,
+      "date": "2022-05-16",
+      "platforms": ["MACOS", "WINDOWS"]
     }
   }
 }
