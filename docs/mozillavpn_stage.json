@@ -1,10 +1,10 @@
 {
   "latest": {
-    "ANDROID": "2.6.0",
-    "IOS": "2.6.0",
-    "LINUX": "2.6.0",
-    "MACOS": "2.7.0",
-    "WINDOWS": "2.7.1"
+    "ANDROID": "2.8.2",
+    "IOS": "2.8.2",
+    "LINUX": "2.8.0",
+    "MACOS": "2.8.3",
+    "WINDOWS": "2.8.4"
   },
   "releases": {
     "2.6.0": {
@@ -20,6 +20,16 @@
     "2.7.1": {
       "build": 4,
       "date": "2022-02-18",
+      "platforms": ["WINDOWS"]
+    },
+     "2.8.3": {
+      "build": 1,
+      "date": "2022-05-09",
+      "platforms": ["WINDOWS", "MAC"]
+    },
+    "2.8.4": {
+      "build": 1,
+      "date": "2022-06-01",
       "platforms": ["WINDOWS"]
     }
   }
