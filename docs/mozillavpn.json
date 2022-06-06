@@ -4,7 +4,7 @@
     "IOS": "2.8.2",
     "LINUX": "2.8.0",
     "MACOS": "2.8.3",
-    "WINDOWS": "2.8.3"
+    "WINDOWS": "2.8.4"
   },
   "releases": {
     "2.5.1": {
@@ -61,6 +61,11 @@
       "build": null,
       "date": "2022-05-16",
       "platforms": ["MACOS", "WINDOWS"]
+    },
+    "2.8.4": {
+      "build": null,
+      "date": "2022-06-06",
+      "platforms": ["WINDOWS"]
     }
   }
 }
