@@ -24,6 +24,15 @@
         "WINDOWS": {"type": "string"}
       }
     },
+    "minimum": {
+      "properties": {
+        "ANDROID": {"type": "string"},
+        "IOS": {"type": "string"},
+        "LINUX": {"type": "string"},
+        "MACOS": {"type": "string"},
+        "WINDOWS": {"type": "string"}
+      }
+    },
     "releases": {
       "values": {"ref": "release"}
     }
