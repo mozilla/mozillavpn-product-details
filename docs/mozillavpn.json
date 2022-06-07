@@ -7,11 +7,11 @@
     "WINDOWS": "2.8.4"
   },
   "minimum": {
-    "ANDROID": "2.8.2",
-    "IOS": "2.8.2",
-    "LINUX": "2.8.0",
-    "MACOS": "2.8.3",
-    "WINDOWS": "2.8.4"
+    "ANDROID": "2.0.0",
+    "IOS": "2.0.0",
+    "LINUX": "2.0.0",
+    "MACOS": "2.1.0",
+    "WINDOWS": "2.7.4"
   },
   "releases": {
     "2.5.1": {
