@@ -14,6 +14,16 @@
     "WINDOWS": "2.7.1"
   },
   "releases": {
+    "2.0.0": {
+      "build": 1,
+      "date": "2019-10-04",
+      "platforms": ["ANDROID", "IOS", "LINUX"]
+    },
+    "2.1.0": {
+      "build": 1,
+      "date": "2021-03-07",
+      "platforms": ["MACOS"]
+    },
     "2.6.0": {
       "build": 3,
       "date": "2021-11-10",
