@@ -14,15 +14,25 @@
     "WINDOWS": "2.7.1"
   },
   "releases": {
-    "2.5.1": {
+    "2.0.0": {
       "build": null,
-      "date": "2021-10-20",
-      "platforms": ["ANDROID", "IOS"]
+      "date": "2020-11-04",
+      "platforms": ["ANDROID", "IOS", "LINUX"]
+    },
+    "2.1.0": {
+      "build": null,
+      "date": "2021-04-07",
+      "platforms": ["MACOS"]
     },
     "2.5.0": {
       "build": null,
       "date": "2021-09-15",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+    },
+    "2.5.1": {
+      "build": null,
+      "date": "2021-10-20",
+      "platforms": ["ANDROID", "IOS"]
     },
     "2.6.0": {
       "build": null,
