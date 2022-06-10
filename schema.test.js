@@ -29,13 +29,16 @@ test('Schema validation', () => {
     expect(valid_release).toBe(true);
 })
 
-test('Internal consistency - minimum and latest entries should have a releases entry', () => {
+test('Internal consistency checks', () => {
     function check_releases(data) {
         for (const block of ["latest", "minimum"]) {
             for (const platform in data[block]) {
                 let release = data[block][platform];
                 console.log(`Looking for a releases entry for ${platform} ${release} (seen in ${block} block).`);
-                expect(data.releases[release]).toBeDefined();
+                let releases_entry = data.releases[release];
+                expect(releases_entry).toBeDefined();
+                console.log(`Looking for the platform ${platform} to be in ${release} entry - ${JSON.stringify(releases_entry)}`);
+                expect(releases_entry.platforms.includes(platform)).toBe(true);
             }
         }
     }
