@@ -29,3 +29,18 @@ test('Schema validation', () => {
     expect(valid_release).toBe(true);
 })
 
+test('Internal consistency - minimum and latest entries should have a releases entry', () => {
+    function check_releases(data) {
+        for (const block of ["latest", "minimum"]) {
+            for (const platform in data[block]) {
+                let release = data[block][platform];
+                console.log(`Looking for a releases entry for ${platform} ${release} (seen in ${block} block).`);
+                expect(data.releases[release]).toBeDefined();
+            }
+        }
+    }
+    console.log("** Testing STAGE mozillavpn_stage.json");
+    check_releases(data_stage);
+    console.log("** Testing PROD mozillavpn.json");
+    check_releases(data_prod);
+});
