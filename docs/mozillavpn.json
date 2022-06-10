@@ -38,7 +38,7 @@
       "build": null,
       "date": "2021-11-15",
       "platforms": ["LINUX", "MACOS", "WINDOWS", "IOS"]
-    }, 
+    },
     "2.6.1": {
       "build": null,
       "date": "2021-11-22",

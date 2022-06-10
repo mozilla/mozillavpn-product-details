@@ -39,7 +39,17 @@
       "date": "2022-02-18",
       "platforms": ["WINDOWS"]
     },
-     "2.8.3": {
+    "2.8.0": {
+      "build": null,
+      "date": "2022-04-18",
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+    },
+    "2.8.2": {
+      "build": null,
+      "date": "2022-05-22",
+      "platforms": ["IOS", "ANDROID"]
+    },
+    "2.8.3": {
       "build": 1,
       "date": "2022-05-09",
       "platforms": ["WINDOWS", "MACOS"]
