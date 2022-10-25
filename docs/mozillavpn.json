@@ -1,10 +1,10 @@
 {
   "latest": {
-    "ANDROID": "2.9.0",
-    "IOS": "2.8.2",
-    "LINUX": "2.9.0",
-    "MACOS": "2.9.0",
-    "WINDOWS": "2.9.0"
+    "ANDROID": "2.10.0",
+    "IOS": "2.10.0",
+    "LINUX": "2.10.0",
+    "MACOS": "2.10.0",
+    "WINDOWS": "2.10.0"
   },
   "minimum": {
     "ANDROID": "2.0.0",
@@ -88,6 +88,11 @@
       "build": null,
       "date": "2022-07-25",
       "platforms": ["ANDROID", "LINUX", "MACOS", "WINDOWS"]
+    },
+    "2.10.0": {
+      "build": null,
+      "date": "2022-10-25",
+      "platforms": ["ANDROID", "LINUX", "MACOS", "WINDOWS", "IOS"]
     }
   }
 }
