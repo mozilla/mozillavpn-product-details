@@ -111,7 +111,7 @@
     },
     "2.12.0": {
       "build": null,
-      "date": "2022-12-16",
+      "date": "2022-12-15",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     }
   }
