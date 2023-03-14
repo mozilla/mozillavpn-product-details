@@ -3,8 +3,8 @@
     "ANDROID": "2.10.1",
     "IOS": "2.10.0",
     "LINUX": "2.11.0",
-    "MACOS": "2.11.0",
-    "WINDOWS": "2.11.0"
+    "MACOS": "2.14.0",
+    "WINDOWS": "2.14.0"
   },
   "minimum": {
     "ANDROID": "2.0.0",
@@ -78,6 +78,11 @@
       "build": null,
       "date": "2022-11-02",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+    },
+    "2.14.0": {
+      "build": null,
+      "date": "2023-03-14",
+      "platforms": ["MACOS", "WINDOWS"]
     }
   }
 }
