@@ -15,107 +15,86 @@
   },
   "releases": {
     "2.0.0": {
-      "build": null,
       "date": "2020-11-04",
       "platforms": ["ANDROID", "IOS", "LINUX"]
     },
     "2.1.0": {
-      "build": null,
       "date": "2021-04-07",
       "platforms": ["MACOS"]
     },
     "2.5.0": {
-      "build": null,
       "date": "2021-09-15",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     },
     "2.5.1": {
-      "build": null,
       "date": "2021-10-20",
       "platforms": ["ANDROID", "IOS"]
     },
     "2.6.0": {
-      "build": null,
       "date": "2021-11-15",
       "platforms": ["LINUX", "MACOS", "WINDOWS", "IOS"]
     },
     "2.6.1": {
-      "build": null,
       "date": "2021-11-22",
       "platforms": ["ANDROID", "MACOS", "WINDOWS"]
     },
     "2.6.2": {
-      "build": null,
       "date": "2021-11-23",
       "platforms": ["IOS"]
     },
     "2.7.0": {
-      "build": null,
       "date": "2022-02-01",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     },
     "2.7.1": {
-      "build": null,
       "date": "2022-02-23",
       "platforms": ["WINDOWS"]
     },
     "2.8.0": {
-      "build": null,
       "date": "2022-04-18",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     },
     "2.8.1": {
-      "build": null,
       "date": "2022-04-26",
       "platforms": ["IOS"]
     },
     "2.8.2": {
-      "build": null,
       "date": "2022-05-22",
       "platforms": ["IOS", "ANDROID"]
     },
     "2.8.3": {
-      "build": null,
       "date": "2022-05-16",
       "platforms": ["MACOS", "WINDOWS"]
     },
     "2.8.4": {
-      "build": null,
       "date": "2022-06-06",
       "platforms": ["WINDOWS"]
     },
     "2.9.0": {
-      "build": null,
       "date": "2022-07-25",
       "platforms": ["ANDROID", "LINUX", "MACOS", "WINDOWS"]
     },
     "2.10.0": {
-      "build": null,
       "date": "2022-10-25",
       "platforms": ["ANDROID", "MACOS", "WINDOWS", "IOS"]
     },
     "2.10.1": {
-      "build": null,
       "date": "2022-10-26",
       "platforms": ["ANDROID", "LINUX"]
     },
     "2.11.0": {
-      "build": null,
       "date": "2022-11-14",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     },
     "2.11.1": {
-      "build": null,
       "date": "2022-11-24",
       "platforms": ["MACOS", "WINDOWS", "IOS"]
     },
     "2.12.0": {
-      "build": null,
       "date": "2022-12-15",
       "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
     },
     "2.13.0": {
-      "build": null,
       "date": "2023-02-01",
       "platforms": ["MACOS", "WINDOWS", "LINUX", "ANDROID", "IOS"]
     },

@@ -6,11 +6,7 @@ Hosts a [product-details](https://github.com/mozilla-releng/product-details) sty
 
 Automatically deploys to gh pages.
 
-#### How it works, and why.
-
-* `schema.jtd.json` contains the main schema that all files must validate.
-* `schema_release.jtd.json` contains a mostly lax schema, that exists only to force the build number to be null on the
-  prod mozillavpn.json
+* `schema.jtd.json` contains the schema that all files must validate.
 
 The product details files are currently (Oct-28-21) used to:
 * Build links to http://archive.mozilla.org/pub/vpn/ to packages for download on vpn.mozilla.org
