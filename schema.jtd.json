@@ -2,6 +2,7 @@
   "definitions": {
     "release": {
       "properties": {
+        "build": {},
         "date": {
           "type": "string"
         },
