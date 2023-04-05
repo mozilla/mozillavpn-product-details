@@ -99,10 +99,12 @@
       "platforms": ["MACOS", "WINDOWS", "LINUX", "ANDROID", "IOS"]
     },
     "2.14.0": {
+      "build": null,
       "date": "2023-03-27",
       "platforms": ["MACOS", "WINDOWS", "IOS", "ANDROID"]
     },
     "2.14.1": {
+      "build": null,
       "date": "2023-03-30",
       "platforms": ["LINUX"]
     }
