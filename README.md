@@ -20,6 +20,12 @@ link structure.
 * Commits must be signed
 * No exceptions
 
+#### Changing schemas
+
+This file is currently consumed by Guardian as a means of providing download
+URLs. If the schema requires changes, a Guardian contributor must be notified
+in advance so that code and tests can be updated to match.
+
 #### Running locally
 
 ```sh
