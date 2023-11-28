@@ -1,7 +1,7 @@
 {
   "latest": {
     "ANDROID": "2.18.0",
-    "IOS": "2.18.0",
+    "IOS": "2.18.1",
     "LINUX": "2.18.0",
     "MACOS": "2.18.0",
     "WINDOWS": "2.18.0"
@@ -147,6 +147,11 @@
       "build": null,
       "date": "2023-10-03",
       "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+    },
+    "2.18.1": {
+      "build": null,
+      "date": "2023-11-22",
+      "platforms": ["IOS"]
     }
   }
 }
