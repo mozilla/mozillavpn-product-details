@@ -16,10 +16,10 @@ class release:
         self.version = version
         self.json = js
         self.platforms = [x.lower() for x in js['platforms']]
-    
+
     def matches(self, platform):
         return platform.lower() in self.platforms
-    
+
     def toxml(self):
         attrs = {
             'version': self.version,
@@ -32,25 +32,29 @@ class release:
         xurl.text = f"https://github.com/mozilla-mobile/mozilla-vpn-client/releases/v{self.version}"
         xml.append(xurl)
 
+        # TODO: It is recommended to include a release description in the Appstream
+        # manifest too. We could fetch this from the Github releases API, but they
+        # aren't very well formatted for this purpose.
+
         return xml
 
 if __name__ == "__main__":
     ## Parse arguments to locate the input files and options.
     parser = argparse.ArgumentParser(
-        description='Generate releases information for an appstream file')
+        description='Generate Appstream releases information from JSON')
 
     parser.add_argument('source', metavar='SOURCE', type=str, action='store',
-        help='Appstream metainfo file to parse')
+        help='JSON releases file to parse')
     parser.add_argument('--platform', metavar='PLATFORM', type=str,
         action='store', default='LINUX',
         help='Target platform for appstream releases')
     args = parser.parse_args()
 
-    # Parse the release file
+    # Parse the JSON releases file
     with open(args.source, 'r') as fp:
         data = json.load(fp)
 
-    # Build the releases XML document.
+    # Build the Appstream releases XML document.
     root = ElementTree.Element('releases')
     versions = list(data['releases'].keys())
     versions.sort(key=Version, reverse=True)
@@ -58,7 +62,7 @@ if __name__ == "__main__":
         info = release(version, data['releases'][version])
         if info.matches(args.platform):
             root.append(info.toxml())
-    
+
     # Dump the XML data to stdout
     ElementTree.indent(root, space="  ")
     ElementTree.dump(root)
