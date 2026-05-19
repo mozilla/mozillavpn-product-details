@@ -4,14 +4,16 @@
     "IOS": "2.36.0",
     "LINUX": "2.36.0",
     "MACOS": "2.36.0",
-    "WINDOWS": "2.36.0"
+    "WINDOWS": "2.36.0",
+    "WINDOWS-ARM": "2.36.0"
   },
   "minimum": {
     "ANDROID": "2.0.0",
     "IOS": "2.0.0",
     "LINUX": "2.0.0",
     "MACOS": "2.22.1",
-    "WINDOWS": "2.22.1"
+    "WINDOWS": "2.22.1",
+    "WINDOWS-ARM": "2.36.0"
   },
   "releases": {
     "2.0.0": {
@@ -286,7 +288,7 @@
     "2.36.0": {
       "build": null,
       "date": "2026-04-22",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM", "LINUX", "IOS", "ANDROID"]
     }
   }
 }

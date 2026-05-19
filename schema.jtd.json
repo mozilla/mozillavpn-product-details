@@ -8,7 +8,7 @@
         },
         "platforms": {
           "elements": {
-            "enum": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+            "enum": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS", "WINDOWS-ARM"]
           }
         }
       }
@@ -21,7 +21,8 @@
         "IOS": {"type": "string"},
         "LINUX": {"type": "string"},
         "MACOS": {"type": "string"},
-        "WINDOWS": {"type": "string"}
+        "WINDOWS": {"type": "string"},
+        "WINDOWS-ARM": {"type": "string"}
       }
     },
     "minimum": {
@@ -30,7 +31,8 @@
         "IOS": {"type": "string"},
         "LINUX": {"type": "string"},
         "MACOS": {"type": "string"},
-        "WINDOWS": {"type": "string"}
+        "WINDOWS": {"type": "string"},
+        "WINDOWS-ARM": {"type": "string"}
       }
     },
     "releases": {
