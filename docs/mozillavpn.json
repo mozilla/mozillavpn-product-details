@@ -13,7 +13,7 @@
     "LINUX": "2.0.0",
     "MACOS": "2.22.1",
     "WINDOWS": "2.22.1",
-    "WINDOWS-ARM": "2.22.1"
+    "WINDOWS-ARM": "2.36.0"
   },
   "releases": {
     "2.0.0": {
