@@ -7,8 +7,10 @@ import argparse
 import os
 import sys
 import json
+import yaml
 
 from packaging.version import Version
+from xlifftool import xliff_language as xliff
 from xml.etree import ElementTree
 
 class release:
@@ -20,7 +22,37 @@ class release:
     def matches(self, platform):
         return platform.lower() in self.platforms
 
-    def toxml(self):
+    def xmllocalize(self, parent, tag, text, stringdb):
+        item = ElementTree.SubElement(parent, tag)
+        item.text = stringdb["source"][text]
+        for locale in stringdb.keys():
+            if locale == "source":
+                continue
+            item = ElementTree.SubElement(parent, tag, attrib={"xml:lang": locale})
+            item.text = stringdb[locale][text]
+
+    def description(self, stringdb):
+        if stringdb is None:
+            return None
+
+        desc = ElementTree.Element('description')
+        if "description" in self.json:
+            self.xmllocalize(desc, 'p', self.json["description"], stringdb)
+
+        if "whatsnew" in self.json:
+            bullets = ElementTree.Element('ul')
+            for key in self.json["whatsnew"]:
+                self.xmllocalize(desc, 'li', key, stringdb)
+
+            if len(bullets) > 0:
+                desc.append(bullets)
+
+        if len(desc) == 0:
+            return None
+        else:
+            return desc
+
+    def toxml(self, stringdb=None):
         attrs = {
             'version': self.version,
             'date': self.json['date']
@@ -32,11 +64,23 @@ class release:
         xurl.text = f"https://github.com/mozilla-mobile/mozilla-vpn-client/releases/v{self.version}"
         xml.append(xurl)
 
-        # TODO: It is recommended to include a release description in the Appstream
-        # manifest too. We could fetch this from the Github releases API, but they
-        # aren't very well formatted for this purpose.
+        # Add release information, if possible
+        desc = self.description(stringdb)
+        if desc:
+            xml.append(desc)
 
         return xml
+
+def parse_strings_yaml(fp):
+    data = yaml.safe_load(fp)
+    result = {}
+    for key, group in data.items():
+        for name, value in group.items():
+            result[f'vpn.{key}.{name}'] = value["value"]
+    return result
+
+def parse_strings_xliff(fp):
+    return None
 
 if __name__ == "__main__":
     ## Parse arguments to locate the input files and options.
@@ -45,6 +89,8 @@ if __name__ == "__main__":
 
     parser.add_argument('source', metavar='SOURCE', type=str, action='store',
         help='JSON releases file to parse')
+    parser.add_argument('-i', '--i18n', metavar='DIR', type=str, action='store',
+        help='Load localization data from DIR')
     parser.add_argument('--platform', metavar='PLATFORM', type=str,
         action='store', default='LINUX',
         help='Target platform for appstream releases')
@@ -54,6 +100,27 @@ if __name__ == "__main__":
     with open(args.source, 'r') as fp:
         data = json.load(fp)
 
+    # Parse an optional strings database from the same location as the JSON
+    stringdb = {}
+    stringyaml = os.path.join(os.path.dirname(os.path.realpath(args.source)), 'strings.yaml')
+    if os.path.exists(stringyaml):
+        with open(stringyaml, 'r') as fp:
+            stringdb["source"] = parse_strings_yaml(fp)
+
+    # If a localization directory was provided, parse the addon XLIFF data too.
+    if args.i18n:
+        for entry in os.scandir(args.i18n):
+            if not entry.is_dir():
+                continue
+            
+            filename = os.path.join(args.i18n, entry.name, 'addons', 'strings.xliff')
+            if not os.path.exists(filename):
+                continue
+
+            xliffdata = xliff(entry.name)
+            xliffdata.parse_xliff(filename)
+            stringdb[xliffdata.locale] = xliffdata
+
     # Build the Appstream releases XML document.
     root = ElementTree.Element('releases')
     versions = list(data['releases'].keys())
@@ -61,7 +128,7 @@ if __name__ == "__main__":
     for version in versions:
         info = release(version, data['releases'][version])
         if info.matches(args.platform):
-            root.append(info.toxml())
+            root.append(info.toxml(stringdb))
 
     # Dump the XML data to stdout
     ElementTree.indent(root, space="  ")
