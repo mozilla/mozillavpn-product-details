@@ -7,7 +7,6 @@ import argparse
 import os
 import sys
 import json
-import yaml
 
 from packaging.version import Version
 from xlifftool import xliff_language as xliff
@@ -24,10 +23,12 @@ class release:
 
     def xmllocalize(self, parent, tag, text, stringdb):
         item = ElementTree.SubElement(parent, tag)
-        item.text = stringdb["source"][text]
+        item.text = stringdb["en"][text]
+
         for locale in stringdb.keys():
-            if locale == "source":
+            if locale == "en":
                 continue
+
             item = ElementTree.SubElement(parent, tag, attrib={"xml:lang": locale})
             item.text = stringdb[locale][text]
 
@@ -39,18 +40,17 @@ class release:
         if "description" in self.json:
             self.xmllocalize(desc, 'p', self.json["description"], stringdb)
 
-        if "whatsnew" in self.json:
-            bullets = ElementTree.Element('ul')
-            for key in self.json["whatsnew"]:
-                self.xmllocalize(desc, 'li', key, stringdb)
+        bullets = ElementTree.Element('ul')
+        for key in self.json.get("whatsnew", []):
+            self.xmllocalize(desc, 'li', key, stringdb)
 
-            if len(bullets) > 0:
-                desc.append(bullets)
+        if len(bullets) > 0:
+            desc.append(bullets)
 
         if len(desc) == 0:
             return None
-        else:
-            return desc
+
+        return desc
 
     def toxml(self, stringdb=None):
         attrs = {
@@ -66,21 +66,10 @@ class release:
 
         # Add release information, if possible
         desc = self.description(stringdb)
-        if desc:
+        if not desc is None:
             xml.append(desc)
 
         return xml
-
-def parse_strings_yaml(fp):
-    data = yaml.safe_load(fp)
-    result = {}
-    for key, group in data.items():
-        for name, value in group.items():
-            result[f'vpn.{key}.{name}'] = value["value"]
-    return result
-
-def parse_strings_xliff(fp):
-    return None
 
 if __name__ == "__main__":
     ## Parse arguments to locate the input files and options.
@@ -100,15 +89,10 @@ if __name__ == "__main__":
     with open(args.source, 'r') as fp:
         data = json.load(fp)
 
-    # Parse an optional strings database from the same location as the JSON
-    stringdb = {}
-    stringyaml = os.path.join(os.path.dirname(os.path.realpath(args.source)), 'strings.yaml')
-    if os.path.exists(stringyaml):
-        with open(stringyaml, 'r') as fp:
-            stringdb["source"] = parse_strings_yaml(fp)
-
     # If a localization directory was provided, parse the addon XLIFF data too.
+    stringdb = None
     if args.i18n:
+        stringdb = {}
         for entry in os.scandir(args.i18n):
             if not entry.is_dir():
                 continue

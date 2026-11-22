@@ -19,6 +19,9 @@ class xliff_language:
     def __getitem__(self, key):
         return self.translate(key)
 
+    def __len__(self):
+        return len(self.__stringdb)
+
     ## Read-only access to the locale.
     @property
     def locale(self):
@@ -43,7 +46,7 @@ class xliff_language:
     def keys(self):
         return self.__stringdb.keys()
 
-    ## Given a translation ID, try out best to translate it into a printable string.
+    ## Given a translation ID, try our best to translate it into a printable string.
     def translate(self, trid):
         if trid not in self.__stringdb:
             return trid
