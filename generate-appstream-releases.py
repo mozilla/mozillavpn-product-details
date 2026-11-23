@@ -9,6 +9,7 @@ import sys
 import json
 
 from packaging.version import Version
+from xlifftool import xliff_language as xliff
 from xml.etree import ElementTree
 
 class release:
@@ -20,7 +21,42 @@ class release:
     def matches(self, platform):
         return platform.lower() in self.platforms
 
-    def toxml(self):
+    def xmllocalize(self, parent, tag, text, stringdb):
+        if not text in stringdb["en"]:
+            return
+
+        item = ElementTree.SubElement(parent, tag)
+        item.text = stringdb["en"][text]
+        for locale in stringdb.keys():
+            if locale == "en":
+                continue
+            if not text in stringdb[locale]:
+                continue
+
+            x = ElementTree.SubElement(parent, tag, attrib={"xml:lang": locale})
+            x.text = stringdb[locale][text]
+
+    def description(self, stringdb):
+        if stringdb is None:
+            return None
+
+        desc = ElementTree.Element('description')
+        if "description" in self.json:
+            self.xmllocalize(desc, 'p', self.json["description"], stringdb)
+
+        bullets = ElementTree.Element('ul')
+        for key in self.json.get("whatsnew", []):
+            self.xmllocalize(desc, 'li', key, stringdb)
+
+        if len(bullets) > 0:
+            desc.append(bullets)
+
+        if len(desc) == 0:
+            return None
+
+        return desc
+
+    def toxml(self, stringdb=None):
         attrs = {
             'version': self.version,
             'date': self.json['date']
@@ -32,9 +68,10 @@ class release:
         xurl.text = f"https://github.com/mozilla-mobile/mozilla-vpn-client/releases/v{self.version}"
         xml.append(xurl)
 
-        # TODO: It is recommended to include a release description in the Appstream
-        # manifest too. We could fetch this from the Github releases API, but they
-        # aren't very well formatted for this purpose.
+        # Add release information, if possible
+        desc = self.description(stringdb)
+        if not desc is None:
+            xml.append(desc)
 
         return xml
 
@@ -45,6 +82,8 @@ if __name__ == "__main__":
 
     parser.add_argument('source', metavar='SOURCE', type=str, action='store',
         help='JSON releases file to parse')
+    parser.add_argument('-i', '--i18n', metavar='DIR', type=str, action='store',
+        help='Load localization data from DIR')
     parser.add_argument('--platform', metavar='PLATFORM', type=str,
         action='store', default='LINUX',
         help='Target platform for appstream releases')
@@ -54,6 +93,22 @@ if __name__ == "__main__":
     with open(args.source, 'r') as fp:
         data = json.load(fp)
 
+    # If a localization directory was provided, parse the addon XLIFF data too.
+    stringdb = None
+    if args.i18n:
+        stringdb = {}
+        for entry in os.scandir(args.i18n):
+            if not entry.is_dir():
+                continue
+            
+            filename = os.path.join(args.i18n, entry.name, 'addons', 'strings.xliff')
+            if not os.path.exists(filename):
+                continue
+
+            xliffdata = xliff(entry.name)
+            xliffdata.parse_xliff(filename)
+            stringdb[xliffdata.locale] = xliffdata
+
     # Build the Appstream releases XML document.
     root = ElementTree.Element('releases')
     versions = list(data['releases'].keys())
@@ -61,7 +116,7 @@ if __name__ == "__main__":
     for version in versions:
         info = release(version, data['releases'][version])
         if info.matches(args.platform):
-            root.append(info.toxml())
+            root.append(info.toxml(stringdb))
 
     # Dump the XML data to stdout
     ElementTree.indent(root, space="  ")

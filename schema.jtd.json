@@ -11,6 +11,16 @@
             "enum": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS", "WINDOWS-ARM"]
           }
         }
+      },
+      "optionalProperties": {
+        "description": {
+          "type": "string"
+        },
+        "whatsnew": {
+          "elements": {
+            "type": "string"
+          }
+        }
       }
     }
   },

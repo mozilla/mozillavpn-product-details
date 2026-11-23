@@ -15,10 +15,16 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
+      
+      - name: Clone i18n repository
+        uses: actions/checkout@v4
+        with:
+          path: i18n
+          repository: mozilla-l10n/mozilla-vpn-client-l10n
 
       - name: Generate Appstream releases
         shell: bash
-        run: python ./generate-appstream-releases.py docs/mozillavpn.json > docs/org.mozilla.vpn.releases.xml
+        run: python ./generate-appstream-releases.py -i i18n docs/mozillavpn.json > docs/org.mozilla.vpn.releases.xml
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -18,302 +18,426 @@
   "releases": {
     "2.0.0": {
       "date": "2020-11-04",
-      "platforms": ["ANDROID", "IOS", "LINUX"]
+      "platforms": ["ANDROID", "IOS", "LINUX"],
+      "whatsnew": []
     },
     "2.1.0": {
       "date": "2021-04-07",
-      "platforms": ["MACOS"]
+      "platforms": ["MACOS"],
+      "whatsnew": []
     },
     "2.5.0": {
       "date": "2021-09-15",
-      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.5.1": {
       "date": "2021-10-20",
-      "platforms": ["ANDROID", "IOS"]
+      "platforms": ["ANDROID", "IOS"],
+      "whatsnew": []
     },
     "2.6.0": {
       "date": "2021-11-15",
-      "platforms": ["LINUX", "MACOS", "WINDOWS", "IOS"]
+      "platforms": ["LINUX", "MACOS", "WINDOWS", "IOS"],
+      "whatsnew": []
     },
     "2.6.1": {
       "date": "2021-11-22",
-      "platforms": ["ANDROID", "MACOS", "WINDOWS"]
+      "platforms": ["ANDROID", "MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.6.2": {
       "date": "2021-11-23",
-      "platforms": ["IOS"]
+      "platforms": ["IOS"],
+      "whatsnew": []
     },
     "2.7.0": {
       "date": "2022-02-01",
-      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.7.1": {
       "date": "2022-02-23",
-      "platforms": ["WINDOWS"]
+      "platforms": ["WINDOWS"],
+      "whatsnew": []
     },
     "2.8.0": {
       "date": "2022-04-18",
-      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.8.1": {
       "date": "2022-04-26",
-      "platforms": ["IOS"]
+      "platforms": ["IOS"],
+      "whatsnew": []
     },
     "2.8.2": {
       "date": "2022-05-22",
-      "platforms": ["IOS", "ANDROID"]
+      "platforms": ["IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.8.3": {
       "date": "2022-05-16",
-      "platforms": ["MACOS", "WINDOWS"]
+      "platforms": ["MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.8.4": {
       "date": "2022-06-06",
-      "platforms": ["WINDOWS"]
+      "platforms": ["WINDOWS"],
+      "whatsnew": []
     },
     "2.9.0": {
       "date": "2022-07-25",
-      "platforms": ["ANDROID", "LINUX", "MACOS", "WINDOWS"]
+      "platforms": ["ANDROID", "LINUX", "MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.10.0": {
       "date": "2022-10-25",
-      "platforms": ["ANDROID", "MACOS", "WINDOWS", "IOS"]
+      "platforms": ["ANDROID", "MACOS", "WINDOWS", "IOS"],
+      "whatsnew": []
     },
     "2.10.1": {
       "date": "2022-10-26",
-      "platforms": ["ANDROID", "LINUX"]
+      "platforms": ["ANDROID", "LINUX"],
+      "whatsnew": []
     },
     "2.11.0": {
       "date": "2022-11-14",
-      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.11.1": {
       "date": "2022-11-24",
-      "platforms": ["MACOS", "WINDOWS", "IOS"]
+      "platforms": ["MACOS", "WINDOWS", "IOS"],
+      "whatsnew": []
     },
     "2.12.0": {
       "date": "2022-12-15",
-      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"]
+      "platforms": ["ANDROID", "IOS", "LINUX", "MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.13.0": {
       "date": "2023-02-01",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "ANDROID", "IOS"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "ANDROID", "IOS"],
+      "whatsnew": []
     },
     "2.14.0": {
       "build": null,
       "date": "2023-03-27",
-      "platforms": ["MACOS", "WINDOWS", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.14.1": {
       "build": null,
       "date": "2023-03-30",
-      "platforms": ["LINUX"]
+      "platforms": ["LINUX"],
+      "whatsnew": []
     },
     "2.15.0": {
       "build": null,
       "date": "2023-05-30",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.15.1": {
       "build": null,
       "date": "2023-06-30",
-      "platforms": ["MACOS", "WINDOWS", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.15.3": {
       "build": null,
       "date": "2023-07-12",
-      "platforms": ["LINUX"]
+      "platforms": ["LINUX"],
+      "whatsnew": []
     },
     "2.16.0": {
       "build": null,
       "date": "2023-08-07",
-      "platforms": ["MACOS", "WINDOWS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "ANDROID"],
+      "whatsnew": []
     },
     "2.16.1": {
       "build": null,
       "date": "2023-08-09",
-      "platforms": ["LINUX", "IOS"]
+      "platforms": ["LINUX", "IOS"],
+      "whatsnew": []
     },
     "2.17.0": {
       "build": null,
       "date": "2023-09-27",
-      "platforms": ["WINDOWS", "LINUX", "ANDROID"]
+      "platforms": ["WINDOWS", "LINUX", "ANDROID"],
+      "whatsnew": []
     },
     "2.17.1": {
       "build": null,
       "date": "2023-10-03",
-      "platforms": ["IOS"]
+      "platforms": ["IOS"],
+      "whatsnew": []
     },
     "2.18.0": {
       "build": null,
       "date": "2023-10-03",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.18.1": {
       "build": null,
       "date": "2023-11-22",
-      "platforms": ["IOS"]
+      "platforms": ["IOS"],
+      "whatsnew": []
     },
     "2.19.0": {
       "build": null,
       "date": "2023-12-06",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.19.1": {
       "build": null,
       "date": "2023-12-18",
-      "platforms": ["IOS"]
+      "platforms": ["IOS"],
+      "whatsnew": []
     },
     "2.19.2": {
       "build": null,
       "date": "2023-12-20",
-      "platforms": ["ANDROID"]
+      "platforms": ["ANDROID"],
+      "whatsnew": []
     },
     "2.20.0": {
       "build": null,
       "date": "2024-02-14",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.21.0": {
       "build": null,
       "date": "2024-04-03",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.22.0": {
       "build": null,
       "date": "2024-05-14",
-      "platforms": ["LINUX", "IOS", "ANDROID"]
+      "platforms": ["LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.22.1": {
       "build": null,
       "date": "2024-05-15",
-      "platforms": ["MACOS", "WINDOWS"]
+      "platforms": ["MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.23.0": {
       "build": null,
       "date": "2024-07-01",
-      "platforms": ["IOS", "LINUX", "ANDROID"]
+      "platforms": ["IOS", "LINUX", "ANDROID"],
+      "whatsnew": []
     },
     "2.23.1": {
       "build": null,
       "date": "2024-07-01",
-      "platforms": ["MACOS", "WINDOWS"]
+      "platforms": ["MACOS", "WINDOWS"],
+      "whatsnew": []
     },
     "2.24.0": {
       "build": null,
       "date": "2024-09-27",
-      "platforms": ["MACOS", "WINDOWS", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.24.1": {
       "build": null,
       "date": "2024-10-01",
-      "platforms": ["LINUX"]
+      "platforms": ["LINUX"],
+      "whatsnew": []
     },
     "2.24.2": {
       "build": null,
       "date": "2024-10-15",
-      "platforms": ["IOS"]
+      "platforms": ["IOS"],
+      "whatsnew": []
     },
     "2.24.3": {
       "build": null,
       "date": "2024-11-04",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.25.0": {
       "build": null,
       "date": "2025-01-30",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": [
+        "vpn.225updateMessage.bullet1",
+        "vpn.225updateMessage.bullet2"
+      ]
     },
     "2.26.0": {
       "build": null,
       "date": "2025-03-19",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.27.0": {
       "build": null,
       "date": "2025-04-15",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.28.0": {
       "build": null,
       "date": "2025-05-29",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": [
+        "vpn.227updateMessage.bullet1"
+      ]
     },
     "2.29.0": {
       "build": null,
       "date": "2025-06-18",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.30.0": {
       "build": null,
       "date": "2025-07-22",
-      "platforms": ["WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.31.0": {
       "build": null,
       "date": "2025-09-22",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.31.1": {
       "build": null,
       "date": "2025-09-23",
-      "platforms": ["LINUX"]
+      "platforms": ["LINUX"],
+      "whatsnew": []
     },
     "2.32.0": {
       "build": null,
       "date": "2025-10-22",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.33.0": {
       "build": null,
       "date": "2026-02-05",
-      "platforms": ["LINUX", "IOS"]
+      "platforms": ["LINUX", "IOS"],
+      "whatsnew": [
+        "vpn.233updateMessage.bullet1",
+        "vpn.233updateMessage.bullet2",
+        "vpn.233updateMessage.bullet21",
+        "vpn.233updateMessage.bullet3",
+        "vpn.233updateMessage.bullet31",
+        "vpn.233updateMessage.bullet4",
+        "vpn.233updateMessage.bullet5",
+        "vpn.233updateMessage.bullet51",
+        "vpn.233updateMessage.bullet6",
+        "vpn.233updateMessage.bullet61",
+        "vpn.233updateMessage.bullet62",
+        "vpn.233updateMessage.bullet7",
+        "vpn.233updateMessage.bullet8",
+        "vpn.233updateMessage.bullet9",
+        "vpn.233updateMessage.bullet10",
+        "vpn.233updateMessage.bullet11"
+      ]
     },
     "2.33.1": {
       "build": null,
       "date": "2026-02-18",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "ANDROID"],
+      "whatsnew": []
     },
     "2.34.0": {
       "build": null,
       "date": "2026-03-10",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": [
+        "vpn.234updateMessage.bullet1",
+        "vpn.234updateMessage.bullet2",
+        "vpn.234updateMessage.bullet3",
+        "vpn.234updateMessage.bullet4",
+        "vpn.233updateMessage.bullet11"
+      ]
     },
     "2.35.0": {
       "build": null,
       "date": "2026-03-25",
-      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": [
+        "vpn.235updateMessage.bullet1",
+        "vpn.235updateMessage.bullet2",
+        "vpn.235updateMessage.bullet3",
+        "vpn.235updateMessage.bullet4",
+        "vpn.235updateMessage.bullet5",
+        "vpn.233updateMessage.bullet11"
+      ]
     },
     "2.36.0": {
       "build": null,
       "date": "2026-04-22",
-      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": [
+        "vpn.236updateMessage.bullet1",
+        "vpn.236updateMessage.bullet2",
+        "vpn.236updateMessage.bullet3",
+        "vpn.236updateMessage.bullet4",
+        "vpn.236updateMessage.bullet5",
+        "vpn.236updateMessage.bullet6",
+        "vpn.236updateMessage.bullet7",
+        "vpn.233updateMessage.bullet11"
+      ]
     },
     "2.37.0": {
       "build": null,
       "date": "2026-05-22",
-      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": [
+        "vpn.237updateMessage.bullet3",
+        "vpn.237updateMessage.bullet4",
+        "vpn.237updateMessage.bullet5",
+        "vpn.237updateMessage.bullet7",
+        "vpn.237updateMessage.bullet8",
+        "vpn.233updateMessage.bullet11"
+      ]
     },
     "2.38.0": {
       "build": null,
       "date": "2026-06-17",
-      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": [
+        "vpn.237updateMessage.bullet2",
+        "vpn.238updateMessage.bullet1",
+        "vpn.238updateMessage.bullet2",
+        "vpn.233updateMessage.bullet11"
+      ]
     },
     "2.39.0": {
       "build": null,
       "date": "2026-07-22",
-      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM", "LINUX", "IOS", "ANDROID"]
+      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM", "LINUX", "IOS", "ANDROID"],
+      "whatsnew": [
+        "vpn.2026q3.vpn7646",
+        "vpn.237updateMessage.bullet6",
+        "vpn.2026q3.pr11382"
+      ]
     },
     "2.40.0": {
       "build": null,
       "date": "2026-10-19",
-      "platforms": ["LINUX", "IOS", "ANDROID"]
+      "platforms": ["LINUX", "IOS", "ANDROID"],
+      "whatsnew": []
     },
     "2.40.1": {
       "build": null,
       "date": "2026-10-26",
-      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM"]
+      "platforms": ["MACOS", "WINDOWS", "WINDOWS-ARM"],
+      "whatsnew": []
     }
   }
 }
