@@ -22,15 +22,19 @@ class release:
         return platform.lower() in self.platforms
 
     def xmllocalize(self, parent, tag, text, stringdb):
+        if not text in stringdb["en"]:
+            return
+
         item = ElementTree.SubElement(parent, tag)
         item.text = stringdb["en"][text]
-
         for locale in stringdb.keys():
             if locale == "en":
                 continue
+            if not text in stringdb[locale]:
+                continue
 
-            item = ElementTree.SubElement(parent, tag, attrib={"xml:lang": locale})
-            item.text = stringdb[locale][text]
+            x = ElementTree.SubElement(parent, tag, attrib={"xml:lang": locale})
+            x.text = stringdb[locale][text]
 
     def description(self, stringdb):
         if stringdb is None:

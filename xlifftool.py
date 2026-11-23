@@ -19,6 +19,11 @@ class xliff_language:
     def __getitem__(self, key):
         return self.translate(key)
 
+    def __contains__(self, key):
+        if not key in self.__stringdb:
+            return False
+        return len(self.__stringdb[key]["target"]) > 0
+
     def __len__(self):
         return len(self.__stringdb)
 
